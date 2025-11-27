@@ -1,4 +1,5 @@
 "use client";
+import { FiEye, FiHeart, FiShoppingCart } from "react-icons/fi";
 import { useFeaturedBook } from "./featuredcontext";
 export default function FeaturedProduct() {
   const { featuredBook: book } = useFeaturedBook();
@@ -51,7 +52,7 @@ export default function FeaturedProduct() {
         <p className="mb-5 leading-normal">{summary}</p>
         
         {/* Detail buku */}
-        <div className="grid gap-2.5 text-sm grid grid-cols-2 gap-4 mb-5">
+        <div className="my-2">
             <p><strong>Total Halaman:</strong> {totalPages}</p>
             <p><strong>ISBN:</strong> {isbn || '-'}</p>
             <p><strong>Penerbit:</strong> {publisher || '-'}</p>
@@ -59,9 +60,15 @@ export default function FeaturedProduct() {
         </div>
 
         {/* Tombol buyi */}
-        <button className="text-white py-3 px-6 border-none rounded bg-blue-400 cursor-pointer text-sm ">
+        <div className="flex space-x-4 items-center text-center" >
+          <button className="text-white py-3 px-6 border-none rounded bg-blue-400 cursor-pointer text-sm hover:scale-105 transition duration-200">
           Buy Now
         </button>
+        <FiHeart className=" bg-blue-200 text-5xl p-3 rounded-full cursor-pointer hover:scale-105 transition duration-200"></FiHeart>
+        <FiShoppingCart className="bg-blue-200 text-5xl p-3 rounded-full cursor-pointer hover:scale-105 transition duration-200"></FiShoppingCart>
+        <FiEye className="bg-blue-200 text-5xl p-3 rounded-full cursor-pointer hover:scale-105 transition duration-200"></FiEye>
+        </div>
+        
       </div>
     </div>
   );
