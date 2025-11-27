@@ -1,0 +1,16 @@
+- public: file public (including assets)
+- app : Contain all pages
+- src
+    - components : all components (layouts, button, navbar, etc)
+        - Contexts: custom context
+        - Element : Element kecil - kecil
+        - Layout  : Berisi Layout untuk website, default, error, dkk
+    - utils : Folder berisi fungsi - fungsi
+        - helpers : pembantu (fetch backend, etc)
+        - hooks : custom hooks
+    - modules: all views
+        - [Page name]
+            - page.js
+    - styles: kumpulan styling css
+
+
