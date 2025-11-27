@@ -56,7 +56,7 @@ export default function NavbarBawah(){
         
                         {/*basic website tombol*/}
                         <div className="flex justify-between items-center text-blue-300">
-                            <Link href="" className="hover:scale-105 px-2 py-0.5 rounded-2xl transition duration-300 delay-75">Login / Register </Link>
+                            <Link href="#" className="hover:scale-105 px-2 py-0.5 rounded-2xl transition duration-300 delay-75">Login / Register </Link>
                             <div className="hover:scale-105 px-2 py-0.5  rounded-2xl transition duration-300 delay-75 cursor-pointer" onClick={toggleSearch}><FiSearch ></FiSearch></div>
                             <div className="hover:scale-105 px-2 py-0.5  rounded-2xl transition duration-300 delay-75 cursor-pointer"><FiShoppingCart></FiShoppingCart></div>
                             <div className="hover:scale-105 px-2 py-0.5  rounded-2xl transition duration-300 delay-75 cursor-pointer"><FiHeart></FiHeart></div>
