@@ -15,7 +15,10 @@ export default function AboutView(){
             <NavbarBawah/>
             <div className="max-w-5xl mx-auto px-2 py-4">
                 <PathWeb items={breadcrumb} />
-                <h1 className=" mt-20 text-center text-8xl font-bold">About Me</h1>
+                <h1 className=" mt-20 text-center text-8xl font-bold my-7">About Me</h1>
+                <h3>Who am i?</h3>
+                <h3>I dont know too</h3>
+                
             </div>
         </div>
     )
